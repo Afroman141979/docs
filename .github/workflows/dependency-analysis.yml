@@ -8,6 +8,10 @@ on:
     - cron: '0 0 * * MON'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   dependency-analysis:
     if: github.repository == 'crowdin/docs'
